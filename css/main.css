@@ -1,35 +1,153 @@
-.text-align-center {
-    text-align: center;
+html {
+	overflow-y: scroll;
 }
 
-#myBoard {
-    max-width: 100%;
-    height: auto;
-    overflow: scroll;
+body {
+	background-color: #444444;
+	color: #bdbdbd;
+	font-family: sans-serif;
+	padding: 0;
+	margin: 0;
 }
 
-.highlight-white {
-    box-shadow: inset 0 0 3px 3px yellow;
+pre, code {
+	margin: 0;
 }
 
-.highlight-black {
-    box-shadow: inset 0 0 3px 3px blue;
+a {
+	color: #005386;
 }
 
-.highlight-hint {
-    box-shadow: inset 0 0 3px 3px red;
+#header a, #nav a, #menu a {
+	text-decoration: none;
 }
 
-.no-underline {
-    text-decoration: none;
+#nav a:hover {
+	background-color: #222;
 }
 
-.no-outline:focus {
-    outline: none;
-    box-shadow: none;
+#menu {
+	clear: both;
+	color: #069;
+	overflow: hidden;
+	background-color: #de2e14;
+	padding: 0.7ex;
+	border-top: 1px solid #222;
+	border-bottom: 1px solid #069;
 }
 
-.btn-header {
-    font-size: 20px;
-    font-weight: bold;
+#menu a {
+	padding: 0.5ex 1ex;
+	color: #fff;
+}
+
+#menu a:hover {
+	background-color: #069;
+}
+
+#header {
+	background-color: #111;
+	clear: both;
+	color: #555;
+	font-size: 1.78em;
+	padding: 0.7ex 0.7ex 0.7ex 0.7em;
+}
+
+#headerLink {
+	color: #de2e14;
+	margin-left: 5px;
+}
+
+h1 {
+	margin: 1em 1ex 0.5ex 0;
+	font-size: 1.4em;
+}
+
+h2 {
+	margin: 1em 1ex 0.5ex 0;
+	font-size: 1.3em;
+}
+
+h3 {
+	margin: 1em 1ex 0.5ex 0;
+	font-size: 1.0em;
+}
+
+h4 {
+	margin: 1em 1ex 0.5ex 0;
+	font-size: 0.9em;
+}
+
+#headerSubtitle {
+	font-size: 0.75em;
+	font-style: italic;
+	margin-left: 1em;
+}
+
+#content {
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+#nav {
+	float: left;
+	margin: 0 1px 0 0;
+	padding: 1em 0;
+	border-right: 1px dotted #ccc;
+	width: 200px;
+}
+
+#nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+#nav li {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#nav li ul {
+	padding-left: 0.6em !important;
+}
+
+#nav li a {
+	display: block;
+	margin: 0;
+	padding: 0.8ex 2em 0.8ex 1em;
+}
+
+#main {
+	margin: 0 0 0 200px;
+	max-width: 50em;
+	padding: 1.5em;
+}
+
+.left {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.right {
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+.hidden {
+	display: none;
+}
+a {
+	color: #ff4141;
+}
+#main img[src$=svg] {
+	filter: invert(1);
+}
+
+blockquote, pre, code {
+	background-color: #111;
+	border-color: #222;
 }
